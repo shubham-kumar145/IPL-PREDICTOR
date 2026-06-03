@@ -509,20 +509,20 @@ wickets_last_5 = st.number_input(
 # # LIVE METRICS
 # # =========================
 
-# current_rr = round(runs/overs,2)
+current_rr = round(runs/overs,2)
 
-# m1,m2,m3 = st.columns(3)
+m1,m2,m3 = st.columns(3)
 
-# with m1:
-#     st.metric("Current Score", runs)
+with m1:
+    st.metric("Current Score", runs)
 
-# with m2:
-#     st.metric("Current RR", current_rr)
+with m2:
+    st.metric("Current RR", current_rr)
 
-# with m3:
-#     st.metric("Wickets", f"{wickets}/10")
+with m3:
+    st.metric("Wickets", f"{wickets}/10")
 
-# st.divider()
+st.divider()
 
 # =========================
 # VALIDATIONS
